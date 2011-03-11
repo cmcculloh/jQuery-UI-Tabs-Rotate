@@ -1,8 +1,20 @@
 ;(function($){
 	$.extend( $.ui.tabs.prototype, {
+		/**
+		 * Property: rotation
+		 */
 		rotation: null,
+		/**
+		 * Property: rotationDelay
+		 */
 		rotationDelay: null,
+		/**
+		 * Property: continuing
+		 */
 		continuing: null,
+		/**
+		 * Method: rotate
+		 */
 		rotate: function( ms, continuing ) {
 			var self = this,
 				o = this.options;
@@ -60,12 +72,18 @@
 
 			return this;
 		},
+		/**
+		 * Method: pause
+		 */
 		pause: function() {
 			var self = this,
 				o = this.options;
 
 			self.rotate(0);
 		},
+		/**
+		 * Method: unpause
+		 */
 		unpause: function(){
 			var self = this,
 				o = this.options;
