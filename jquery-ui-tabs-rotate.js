@@ -18,8 +18,8 @@
 			var rotate = self._rotate || ( self._rotate = function( e ) {
 				clearTimeout( self.rotation );
 				self.rotation = setTimeout(function() {
-					var t = o.selected;
-					self.select( ++t < self.anchors.length ? t : 0 );
+					var t = o.active;
+					self.option( "active",  ++t < self.anchors.length ? t : 0 );
 				}, ms );
 
 				if ( e ) {
@@ -34,7 +34,7 @@
 					}
 				}
 				: function( e ) {
-					t = o.selected;
+					t = o.active;
 					rotate();
 				});
 
