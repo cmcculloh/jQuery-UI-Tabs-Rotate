@@ -3,6 +3,9 @@ I haven't actually used this code since sometime in 2011.
 Because of that, I can offer little to no support on it's use and am
 no longer updating other than to accept pull requests other people issue.
 
+If you need to also have hover interactions (ie. if you want to write
+code that makes the tabs pause on hover), I wrote another plugin for 
+that too: https://github.com/cmcculloh/jQuery-UI-Tabs-Hover
 
 You are free to use and modify as you see fit. Here's an actual license:
 
