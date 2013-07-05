@@ -41,13 +41,13 @@
 			// start rotation
 			if ( ms ) {
 				this.element.bind( "tabsactivate", rotate );
-				this.anchors.bind( o.event + ".tabs", stop );
+				this.anchors.bind( o.event + ".tabs", self.pause );
 				rotate();
 			// stop rotation
 			} else {
 				clearTimeout( self.rotation );
 				this.element.unbind( "tabsactivate", rotate );
-				this.anchors.unbind( o.event + ".tabs", stop );
+				this.anchors.unbind( o.event + ".tabs", self.pause );
 				delete this._rotate;
 				delete this._unrotate;
 			}
