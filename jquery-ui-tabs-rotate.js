@@ -41,7 +41,7 @@
 			// start rotation
 			if ( ms ) {
 				this.element.bind( "tabsactivate", rotate );
-				this.anchors.bind( o.event + ".tabs", $.proxy(self.pause, self) );
+				this.anchors.bind( o.event + ".tabs", $.proxy(self.unpause, self) );
 				rotate();
 			// stop rotation
 			} else {
